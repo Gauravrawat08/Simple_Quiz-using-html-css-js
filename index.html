@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #score{
+            margin: 3rem 0 2rem 42rem;
+        }
+        button {
+            background-color: crimson;
+            border: 0;
+            color: #fff;
+            padding: 5px 10px;
+            display: block;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+
+        .quiz {
+            width: 600px;
+            height: 600px;
+            background-color: rgba(168, 96, 202, 0.5);
+            position: fixed;
+            top: 4rem;
+            left: 30rem;
+            display: none;
+        }
+
+        .quizc-content {
+            width: 300px;
+            height: auto;
+            background-color: #ffff;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .quiz-close {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+        .quiz-close img{
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0.2rem 0 0 0.3rem;
+        }
+
+        .quizc-content>form {
+            width: 100%;
+            height: 100%;
+            padding: 3%;
+        }
+        .first-qustion-div{
+            margin: 5rem 0 0 0rem;
+        }
+        p{
+            margin: 1rem 0 0 1rem;
+        }
+        input[type="radio"]{
+            margin: 1rem;
+        }
+
+     .submit-btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        align-items: center;
+     }
+     .submit-btn input{
+        background-color: rgb(221, 93, 221);
+        color: white;
+        width: 8rem;
+        height: 2rem;
+     } 
+ 
+    </style>
+</head>
+
+<body>
+    <button class="btn">Quiz Start</button>
+    <h2 id="score"></h2>
+    <div class="quiz">
+        <div class="quiz-content">
+            <div class="quiz-close"><img src="close.png" alt="load" class="quiz-close-img"></div>
+            <form onsubmit="QuizSubmitt(event)">
+                <div class="first-qustion-div">
+                    <p>Who is the prime minister of India?</p>
+                    <input type="radio" name="q1" value="A"><label>Rahul Gandhi</label>
+                    <input type="radio" name="q1" value="B"><label>Narendra Modi</label>
+                </div>
+                <div>
+                    <p>What is the National game of India?</p>
+                    <input type="radio" name="q2" value="A"><label>Cricket</label>
+                    <input type="radio" name="q2" value="B"><label>Hockey</label>
+                </div>
+                <div>
+                    <p>What is the national flower of India?</p>
+                    <input type="radio" name="q3" value="A"><label>lotus</label>
+                    <input type="radio" name="q3" value="B"><label>Rose</label>
+                </div>
+                <div>
+                    <p>What is the capital of India?</p>
+                    <input type="radio" name="q4" value="A"><label>New Delhi</label>
+                    <input type="radio" name="q4" value="B"><label>Mumbai</label>
+                </div>
+                <div>
+                    <p>Who is the Father of Nation?</p>
+                    <input type="radio" name="q5" value="A"><label>Mahatma Gandhi</label>
+                    <input type="radio" name="q5" value="B"><label>Subash Chandra Bose</label>
+                </div>
+                <div class="submit-btn">
+                    <input type="submit" value="SUBMIT QUIZ" class="submittt">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
